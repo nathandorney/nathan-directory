@@ -11,14 +11,14 @@
   backdrop-filter: blur(10px);
 }
 
-.menuInner {
+/* .menuInner {
   width: 100%;
   max-width: var(--site-width);
   margin: 0 auto;
   align-items: flex-start;
   display: flex;
   padding: 0 1.25rem;
-}
+} */
 
 .nav {
   margin: 0;
