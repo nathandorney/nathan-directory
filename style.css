@@ -6,6 +6,16 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Gambarino-Regular";
+  src: url("/fonts/Gambarino-Regular.woff2") format("woff2"),
+    url("/fonts/Gambarino-Regular.woff") format("woff"),
+    url("/fonts/Gambarino-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
 :root {
   /* Color */
   --color-background: #1e1e1e;
@@ -26,11 +36,12 @@
   /* Typography */
   --font-mono: "Jet Brains Mono", monospace;
   --font-sans: "Inter", sans-serif;
+  --font-serif: "Gambarino-Regular", serif;
   --font-size-sm: 14px;
   --font-size-rg: 1rem;
   --font-size-md: 1.1rem;
   --font-size-lg: 1.2rem;
-  --font-size-xl: 1.5rem;
+  --font-size-xl: 3rem;
 
   /* Border */
   --radius-sm: 4px;
@@ -88,7 +99,7 @@ h1 {
   color: var(--color-type-heading);
   font-size: var(--font-size-xl);
   font-weight: 500;
-  font-family: var(--font-sans);
+  font-family: var(--font-serif);
   margin: 0;
   margin-top: 2rem;
   margin-bottom: 0.25rem;
