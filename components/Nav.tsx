@@ -1,37 +1,38 @@
 import ActiveLink from './ActiveLink'
+import styles from './nav.module.css'
 
 const Nav = () => (
   <nav>
-    <style jsx>{`
-      .nav-link {
-        text-decoration: none;
-      }
+    <ul className={styles.nav}>
+      <li>
+        <ActiveLink activeClassName={styles.active} href="/">
+          <a className={styles.navLink}>Home</a>
+        </ActiveLink>
+      </li>
 
-      .active:after {
-        content: ' (current page)';
-      }
-    `}</style>
-    <ul className="nav">
       <li>
-        <ActiveLink activeClassName="active" href="/">
-          <a className="nav-link">Home</a>
+        <ActiveLink activeClassName={styles.active} href="/work">
+          <a className={styles.navLink}>Work</a>
         </ActiveLink>
       </li>
       <li>
-        <ActiveLink activeClassName="active" href="/about">
-          <a className="nav-link">About</a>
+        <ActiveLink activeClassName={styles.active} href="/projects">
+          <a className={styles.navLink}>Projects</a>
         </ActiveLink>
       </li>
-      <li>
-        <ActiveLink activeClassName="active" href="/blog">
-          <a className="nav-link">Blog</a>
+            <li>
+        <ActiveLink activeClassName={styles.active} href="/desk">
+          <a className={styles.navLink}>Desk</a>
         </ActiveLink>
       </li>
-      <li>
+
+
+
+      {/* <li>
         <ActiveLink activeClassName="active" href="/[slug]" as="/dynamic-route">
           <a className="nav-link">Dynamic Route</a>
         </ActiveLink>
-      </li>
+      </li> */}
     </ul>
   </nav>
 )
