@@ -101,7 +101,6 @@ h1 {
   font-weight: 500;
   font-family: var(--font-serif);
   margin: 0;
-  margin-top: 2rem;
   margin-bottom: 0.25rem;
 }
 
@@ -163,4 +162,8 @@ a:hover {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.avatar {
+  border-radius: 999px;
 }

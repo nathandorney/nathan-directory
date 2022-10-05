@@ -1,32 +1,30 @@
-import {
-  Popover,
-  PopoverTrigger,
-  PopoverContent,
-} from '../components/Popover';
+import { Popover, PopoverTrigger, PopoverContent } from "../components/Popover";
 
-import Nav from '../components/Nav'
-import Link from 'next/link';
+import Nav from "../components/Nav";
+import Link from "next/link";
 
-import styles from './nav.module.css'
+import styles from "./nav.module.css";
 
 const Menu = () => (
   <div className={styles.menuWrapper}>
-    <Popover>
-
-      <div className={styles.menuText}>
-        <Link href="/"><a>Nathan</a></Link>
+    <div className={styles.menuInner}>
+      <Popover>
+        <div className={styles.menuText}>
+          <Link href="/">
+            <a>Nathan</a>
+          </Link>
           <p className={styles.divider}>/</p>
           <PopoverTrigger className={styles.button}>
             <p>Active page</p>
           </PopoverTrigger>
-      </div>
+        </div>
 
-      <PopoverContent>
-        <Nav />
-      </PopoverContent>
-      
-    </Popover>
+        <PopoverContent>
+          <Nav />
+        </PopoverContent>
+      </Popover>
+    </div>
   </div>
-)
+);
 
-export default Menu
+export default Menu;

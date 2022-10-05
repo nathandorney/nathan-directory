@@ -1,0 +1,33 @@
+.projectList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.projectItem {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-accent-1);
+  border-radius: var(--radius-lg);
+  opacity: 1;
+  margin-bottom: var(--space-3);
+  gap: var(--space-3);
+  align-items: flex-start;
+  padding: var(--space-3);
+  transition: all 200ms ease-in-out;
+}
+
+.projectItem p {
+  margin-bottom: 0;
+}
+
+.projectItem h2 {
+  margin-bottom: var(--space-1);
+}
+
+.projectItem:hover {
+  opacity: 1;
+  background-color: var(--color-accent-2);
+}
