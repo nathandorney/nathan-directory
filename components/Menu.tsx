@@ -2,6 +2,7 @@ import { Popover, PopoverTrigger, PopoverContent } from "../components/Popover";
 
 import Nav from "../components/Nav";
 import Link from "next/link";
+import Contact from "./Contact";
 
 import styles from "./nav.module.css";
 
@@ -23,6 +24,8 @@ const Menu = () => (
           <Nav />
         </PopoverContent>
       </Popover>
+
+      <Contact />
     </div>
   </div>
 );

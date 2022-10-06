@@ -1,11 +1,4 @@
-/** @type {import('next').NextConfig} */
-module.exports = {
-  async rewrites() {
-    return [
-      {
-        source: '/blog',
-        destination: '/news',
-      },
-    ]
-  },
-}
+// next.config.js
+const withVideos = require("next-videos");
+
+module.exports = withVideos();

@@ -4,21 +4,22 @@
   left: 0;
   display: flex;
   gap: 12px;
-  z-index: 999;
-  background: rgba(30, 30, 30, 0.9);
-  padding: var(--space-3) var(--space-4);
+  z-index: 9;
+  background: rgba(30, 30, 30, 0.95);
   width: 100%;
   backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--color-accent-1);
 }
 
-/* .menuInner {
+.menuInner {
   width: 100%;
   max-width: var(--site-width);
   margin: 0 auto;
   align-items: flex-start;
   display: flex;
-  padding: 0 1.25rem;
-} */
+  justify-content: space-between;
+  padding: 12px 20px;
+}
 
 .nav {
   margin: 0;
@@ -95,7 +96,7 @@
 }
 
 .button:hover {
-  background-color: var(--color-accent-1);
+  background-color: var(--color-accent-2);
   opacity: 1;
   color: var(--color-text-heading);
 }

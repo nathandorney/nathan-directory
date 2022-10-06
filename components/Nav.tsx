@@ -1,5 +1,5 @@
-import ActiveLink from './ActiveLink'
-import styles from './nav.module.css'
+import ActiveLink from "./ActiveLink";
+import styles from "./nav.module.css";
 
 const Nav = () => (
   <nav>
@@ -20,13 +20,26 @@ const Nav = () => (
           <a className={styles.navLink}>Projects</a>
         </ActiveLink>
       </li>
-            <li>
+      <li>
         <ActiveLink activeClassName={styles.active} href="/desk">
           <a className={styles.navLink}>Desk</a>
         </ActiveLink>
       </li>
-
-
+      <li>
+        <ActiveLink activeClassName={styles.active} href="/coffee">
+          <a className={styles.navLink}>Coffee</a>
+        </ActiveLink>
+      </li>
+      <li>
+        <ActiveLink activeClassName={styles.active} href="/ceramics">
+          <a className={styles.navLink}>Ceramics</a>
+        </ActiveLink>
+      </li>
+      <li>
+        <ActiveLink activeClassName={styles.active} href="/photos">
+          <a className={styles.navLink}>Photos</a>
+        </ActiveLink>
+      </li>
 
       {/* <li>
         <ActiveLink activeClassName="active" href="/[slug]" as="/dynamic-route">
@@ -35,6 +48,6 @@ const Nav = () => (
       </li> */}
     </ul>
   </nav>
-)
+);
 
-export default Nav
+export default Nav;
