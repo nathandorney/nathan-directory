@@ -29,19 +29,18 @@
   border-radius: 6px;
   margin-top: 2rem;
   margin-left: 1rem;
-  animation: slidein cubic-bezier(0.68, -0.55, 0.27, 1.55) 200ms
-    alternate-reverse;
+  animation: slideIn cubic-bezier(0.68, -0.55, 0.27, 1.55) 200ms;
 }
 
-@keyframes slidein {
+@keyframes slideIn {
   from {
-    transform: translateY(0) scale(1);
-    opacity: 1;
+    opacity: 0;
+    transform: scale(0.9);
   }
 
   to {
-    transform: translateY(-16px) scale(0.9);
-    opacity: 0;
+    opacity: 1;
+    transform: scale(1);
   }
 }
 

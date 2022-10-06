@@ -1,6 +1,6 @@
 import * as Dialog from "@radix-ui/react-dialog";
 import styles from "./contact.module.css";
-import { X, HandWaving } from "phosphor-react";
+import { X, HandWaving, TwitterLogo } from "phosphor-react";
 
 const Contact = () => (
   <div>
@@ -14,6 +14,13 @@ const Contact = () => (
         <Dialog.Content className={styles.content}>
           <Dialog.Title>Contact</Dialog.Title>
           <Dialog.Description>Get in touch</Dialog.Description>
+          <a
+            className={styles.twitterButton}
+            href="https://twitter.com/NathanDorney"
+          >
+            <TwitterLogo size={20} weight="light" />
+            Twitter
+          </a>
           <Dialog.Close className={styles.close}>
             <X size={20} weight="regular" />
           </Dialog.Close>

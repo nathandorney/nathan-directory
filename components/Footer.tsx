@@ -1,10 +1,7 @@
-
-
-
 const Footer = () => (
-    <footer>
-        <ul></ul>
-    </footer>
-)
+  <footer>
+    <ul></ul>
+  </footer>
+);
 
-export default Footer
+export default Footer;
