@@ -85,7 +85,7 @@ body {
 main {
   max-width: var(--site-width);
   margin: 0 auto;
-  padding: 6rem 1.25rem;
+  padding: 8rem 1.25rem;
 }
 
 img {

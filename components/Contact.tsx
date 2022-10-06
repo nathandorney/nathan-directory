@@ -1,5 +1,6 @@
 import * as Dialog from "@radix-ui/react-dialog";
 import styles from "./contact.module.css";
+import { X } from "phosphor-react";
 
 const Contact = () => (
   <div>
@@ -10,7 +11,9 @@ const Contact = () => (
         <Dialog.Content className={styles.content}>
           <Dialog.Title>Contact</Dialog.Title>
           <Dialog.Description>Get in touch</Dialog.Description>
-          <Dialog.Close />
+          <Dialog.Close className={styles.close}>
+            <X size={20} weight="regular" />
+          </Dialog.Close>
         </Dialog.Content>
       </Dialog.Portal>
     </Dialog.Root>

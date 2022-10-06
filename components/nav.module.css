@@ -1,14 +1,18 @@
 .menuWrapper {
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   gap: 12px;
   z-index: 9;
-  background: rgba(30, 30, 30, 0.95);
+  background: rgba(40, 40, 40, 0.8);
   width: 100%;
+  max-width: var(--site-width);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--color-accent-1);
+  border: 1px solid var(--color-accent-1);
+  border-radius: var(--radius-lg);
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
 }
 
 .menuInner {
@@ -18,7 +22,6 @@
   align-items: flex-start;
   display: flex;
   justify-content: space-between;
-  padding: 12px 20px;
 }
 
 .nav {
@@ -90,15 +93,12 @@
   font-size: 1rem;
   margin: 0;
   padding: 2px 6px;
-  opacity: 0.6;
-  color: white;
   transition: all 200ms ease-out;
 }
 
 .button:hover {
   background-color: var(--color-accent-2);
   opacity: 1;
-  color: var(--color-text-heading);
 }
 
 .divider {
