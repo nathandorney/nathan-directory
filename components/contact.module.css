@@ -52,7 +52,10 @@
 .button {
   outline: 0;
   border: 0;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 4px;
   border-radius: 4px;
   cursor: pointer;
   border: 1px solid transparent;

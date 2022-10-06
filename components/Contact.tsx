@@ -1,11 +1,14 @@
 import * as Dialog from "@radix-ui/react-dialog";
 import styles from "./contact.module.css";
-import { X } from "phosphor-react";
+import { X, HandWaving } from "phosphor-react";
 
 const Contact = () => (
   <div>
     <Dialog.Root>
-      <Dialog.Trigger className={styles.button}>Contact</Dialog.Trigger>
+      <Dialog.Trigger className={styles.button}>
+        <HandWaving size={16} weight="light" />
+        Contact
+      </Dialog.Trigger>
       <Dialog.Portal>
         <Dialog.Overlay className={styles.overlay} />
         <Dialog.Content className={styles.content}>
