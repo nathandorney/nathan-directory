@@ -80,12 +80,13 @@ body {
   background: var(--color-background);
   color: var(--color-foreground);
   line-height: 1.6;
+  position: relative;
 }
 
 main {
   max-width: var(--site-width);
   margin: 0 auto;
-  padding: 8rem 1.25rem;
+  padding: 4rem 1.25rem;
 }
 
 img {

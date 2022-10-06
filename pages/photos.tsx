@@ -1,4 +1,4 @@
-import Menu from "../components/Menu";
+import Menu from "../components/Header";
 import Image from "next/image";
 
 const PhotoPage = () => (
