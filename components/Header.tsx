@@ -45,11 +45,6 @@ const Menu = () => (
                 </ActiveLink>
               </li>
               <li>
-                <ActiveLink activeClassName={styles.active} href="/coffee">
-                  <a className={styles.navLink}>Coffee</a>
-                </ActiveLink>
-              </li>
-              <li>
                 <ActiveLink activeClassName={styles.active} href="/ceramics">
                   <a className={styles.navLink}>Ceramics</a>
                 </ActiveLink>

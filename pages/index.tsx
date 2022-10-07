@@ -1,10 +1,10 @@
-import Menu from "../components/Header";
 import Image from "next/image";
 import Footer from "../components/Footer";
+import MobileMenu from "../components/MobileMenu";
 
 const AboutPage = () => (
   <div>
-    <Menu />
+    <MobileMenu />
     <main>
       <Image src="/avatar.jpg" width={64} height={64} className="avatar" />
       <h1>Hey! I'm Nathan</h1>
