@@ -41,7 +41,7 @@
 
 .content {
   z-index: 999;
-  background-color: var(--color-accent-1);
+  background-color: var(--color-background);
   border-radius: var(--radius-xl) var(--radius-xl) 0 0;
   padding: var(--space-2);
   position: fixed;
@@ -98,8 +98,8 @@
   color: var(--color-foreground);
   transition: all 200ms ease-out;
   position: fixed;
-  bottom: var(--space-3);
-  right: var(--space-3);
+  bottom: var(--space-4);
+  right: var(--space-4);
   width: 56px;
   height: 56px;
   border-radius: 64px;

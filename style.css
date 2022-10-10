@@ -17,22 +17,20 @@
 }
 
 :root {
-  /* Color */
-  --color-foreground: #1e1e1e;
-  --color-accent-8: #292929;
-  --color-accent-7: #353535;
-  --color-accent-6: #4b4b4b;
-  --color-accent-5: #8e8e8e;
-  --color-accent-4: #bcbcbc;
-  --color-accent-3: #c8c8c8;
-  --color-accent-2: #d2d2d2;
-  --color-accent-1: #e8e8e8;
+  /* Light Theme Colors */
+  --color-foreground: #151416;
+  --color-accent-8: #1a181b;
+  --color-accent-7: #2e2c30;
+  --color-accent-6: #57535b;
+  --color-accent-5: #807986;
+  --color-accent-4: #9e99a3;
+  --color-accent-3: #bdbac0;
+  --color-accent-2: #dbdadd;
+  --color-accent-1: #f0eff0;
   --color-background: #fafafa;
 
-  --color-accent: #c49cf8;
-
   --color-type-heading: var(--color-foreground);
-  --color-type-body: var(--color-accent-6);
+  --color-type-body: var(--color-accent-7);
 
   /* Typography */
   --font-mono: "Jet Brains Mono", monospace;
@@ -68,16 +66,18 @@
 }
 
 [data-theme="dark"] {
-  --color-background: #1e1e1e;
-  --color-accent-1: #292929;
-  --color-accent-2: #353535;
-  --color-accent-3: #4b4b4b;
-  --color-accent-4: #8e8e8e;
-  --color-accent-5: #bcbcbc;
-  --color-accent-6: #c8c8c8;
-  --color-accent-7: #d2d2d2;
-  --color-accent-8: #e8e8e8;
+  /* Dark Theme Colors */
+  --color-background: #151416;
+  --color-accent-1: #1a181b;
+  --color-accent-2: #2e2c30;
+  --color-accent-3: #57535b;
+  --color-accent-4: #807986;
+  --color-accent-5: #9e99a3;
+  --color-accent-6: #bdbac0;
+  --color-accent-7: #dbdadd;
+  --color-accent-8: #f0eff0;
   --color-foreground: #fafafa;
+  --color-accent: #c49cf8;
 }
 
 *,

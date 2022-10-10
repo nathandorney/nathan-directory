@@ -39,12 +39,12 @@
 }
 
 .navLink:hover {
-  background-color: var(--color-accent-3);
+  background-color: var(--color-accent-2);
   opacity: 1;
 }
 
 .active {
-  background-color: var(--color-accent-3);
+  background-color: var(--color-accent-2);
 }
 
 .contactButton {
