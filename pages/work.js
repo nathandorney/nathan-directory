@@ -1,9 +1,8 @@
-import Menu from "../components/Header";
+import Layout from "../components/Layout";
 
-const WorkPage = () => (
-  <div>
-    <Menu />
-    <main>
+export default function Work() {
+  return (
+    <div>
       <h1>Work</h1>
       <p>
         At work I find myself wearing a bunch of different hats (both
@@ -22,8 +21,10 @@ const WorkPage = () => (
         code and use real data to get a good feel for the interface. If you are
         working on a gnarly problem, drop me an email and let's solve it.
       </p>
-    </main>
-  </div>
-);
+    </div>
+  );
+}
 
-export default WorkPage;
+Work.getLayout = function getLayout(page) {
+  return <Layout>{page}</Layout>;
+};

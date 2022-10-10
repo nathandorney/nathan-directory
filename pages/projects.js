@@ -1,11 +1,10 @@
-import Menu from "../components/Header";
+import Layout from "../components/Layout";
 import Image from "next/image";
 import styles from "./projects.module.css";
 
-const ProjectPage = () => (
-  <div>
-    <Menu />
-    <main>
+export default function Projects() {
+  return (
+    <div>
       <h1>Projects</h1>
       <p>
         Over the years I have put a fair few little side projects out into the
@@ -52,8 +51,10 @@ const ProjectPage = () => (
           </a>
         </li>
       </ul>
-    </main>
-  </div>
-);
+    </div>
+  );
+}
 
-export default ProjectPage;
+Projects.getLayout = function getLayout(page) {
+  return <Layout>{page}</Layout>;
+};

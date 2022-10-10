@@ -1,0 +1,10 @@
+.layout {
+  display: flex;
+  flex-direction: row;
+}
+
+.main {
+  max-width: var(--site-width);
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-4);
+}

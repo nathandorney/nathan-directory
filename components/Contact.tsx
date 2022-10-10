@@ -18,7 +18,7 @@ const Contact = () => (
             className={styles.twitterButton}
             href="https://twitter.com/NathanDorney"
           >
-            <TwitterLogo size={20} weight="light" />
+            <TwitterLogo size={24} weight="light" />
             Twitter
           </a>
           <Dialog.Close className={styles.close}>

@@ -100,9 +100,10 @@
   background-color: var(--color-foreground);
   font-size: 1rem;
   margin: 0;
-  padding: 6px 8px;
+  padding: var(--space-2);
   color: var(--color-background);
   transition: all 200ms ease-out;
+  width: 100%;
 }
 
 .button:hover {
