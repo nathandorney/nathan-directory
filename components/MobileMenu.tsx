@@ -60,14 +60,14 @@ const MobileMenu = () => (
                   </a>
                 </ActiveLink>
               </li>
-              <li>
+              {/* <li>
                 <ActiveLink activeClassName={styles.active} href="/bookmarks">
                   <a className={styles.navLink}>
                     <Link size={20} weight="light" />
                     Bookmarks
                   </a>
                 </ActiveLink>
-              </li>
+              </li> */}
               <li>
                 <ActiveLink activeClassName={styles.active} href="/photos">
                   <a className={styles.navLink}>
